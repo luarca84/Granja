@@ -7,8 +7,19 @@
         mc:Ignorable="d"
         Title="Granja" Height="350" Width="525" Icon="/ManagerSQLiteWPF;component/Images/cow_head.png" WindowStartupLocation="CenterScreen">
     <Grid>
-        <ListBox ItemsSource="{Binding LstVacas}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListBox Grid.Column="0" ItemsSource="{Binding LstVacas}">
             
+        </ListBox>
+        <ListBox Grid.Column="1" ItemsSource="{Binding LstTractores}">
+
+        </ListBox>
+        <ListBox Grid.Column="2" ItemsSource="{Binding LstGastos}">
+
         </ListBox>
     </Grid>
 </Window>

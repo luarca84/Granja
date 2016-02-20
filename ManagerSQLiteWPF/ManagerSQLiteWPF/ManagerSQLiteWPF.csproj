@@ -78,7 +78,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Gasto.cs" />
     <Compile Include="Model\ModelManager.cs" />
+    <Compile Include="Model\Tractor.cs" />
+    <Compile Include="Model\Vaca.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
