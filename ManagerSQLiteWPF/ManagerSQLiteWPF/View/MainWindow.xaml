@@ -9,17 +9,26 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListBox Grid.Column="0" ItemsSource="{Binding LstVacas}">
-            
-        </ListBox>
-        <ListBox Grid.Column="1" ItemsSource="{Binding LstTractores}">
+        <TabControl>
+            <TabItem Header="Vacas">
+                <ListBox ItemsSource="{Binding LstVacas}">
 
-        </ListBox>
-        <ListBox Grid.Column="2" ItemsSource="{Binding LstGastos}">
+                </ListBox>
+            </TabItem>
+            <TabItem Header="Tractores">
+                <ListBox ItemsSource="{Binding LstTractores}">
 
-        </ListBox>
+                </ListBox>
+            </TabItem>
+            <TabItem Header="Gastos">
+                <ListBox ItemsSource="{Binding LstGastos}">
+
+                </ListBox>
+            </TabItem>
+        </TabControl>
+        
+        
+        
     </Grid>
 </Window>
